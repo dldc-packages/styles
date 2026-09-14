@@ -1,0 +1,16 @@
+{
+  "name": "@dldc-sandbox/styles",
+  "version": "0.1.0",
+  "exports": "./src/mod.ts",
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "build": "deno run --allow-net src/mod.ts",
+    "transform": "deno run --allow-read --allow-write --allow-run --allow-env --allow-sys --allow-ffi transform.ts"
+  },
+  "imports": {
+    "@std/fs": "jsr:@std/fs@^1.0.24",
+    "@std/path": "jsr:@std/path@^1.1.6",
+    "@wyw-in-js/transform": "npm:@wyw-in-js/transform@^2.5.1",
+    "dx-styles": "npm:dx-styles@^1.4.1"
+  }
+}
