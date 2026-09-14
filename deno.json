@@ -1,7 +1,7 @@
 {
   "name": "@dldc-sandbox/styles",
   "version": "0.1.1",
-  "exports": "./dist/mod.ts",
+  "exports": "./transformed/mod.ts",
   "nodeModulesDir": "auto",
   "tasks": {
     "build": "deno run --allow-net src/mod.ts",
