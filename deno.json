@@ -1,6 +1,6 @@
 {
   "name": "@dldc-sandbox/styles",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "exports": "./transformed/mod.ts",
   "nodeModulesDir": "auto",
   "tasks": {
