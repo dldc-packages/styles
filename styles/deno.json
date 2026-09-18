@@ -1,7 +1,10 @@
 {
   "name": "@dldc-sandbox/styles",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "exports": "./transformed/mod.ts",
+  "tasks": {
+    "bump": "deno run -A jsr:@mys/bump@1"
+  },
   "imports": {
     "@dldc/css-builder": "jsr:@dldc/css-builder@^1.6.0",
     "@vanilla-extract/css": "npm:@vanilla-extract/css@^1.21.2",
@@ -13,6 +16,9 @@
     "type-fest": "npm:type-fest@^5.9.0"
   },
   "publish": {
-    "include": ["transformed", "src"]
+    "include": [
+      "transformed",
+      "src"
+    ]
   }
 }
