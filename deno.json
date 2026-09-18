@@ -2,7 +2,6 @@
   "workspace": ["./styles", "./tools"],
   "nodeModulesDir": "auto",
   "tasks": {
-    "transform": "deno run -A tools/transform.ts",
     "deps:outdated": "deno outdated",
     "deps:update": "deno outdated --update --latest --interactive",
     "check": "deno fmt --check . && deno check . && deno lint ."

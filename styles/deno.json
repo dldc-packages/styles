@@ -3,7 +3,8 @@
   "version": "0.4.1",
   "exports": "./transformed/mod.ts",
   "tasks": {
-    "bump": "deno run -A jsr:@mys/bump@1"
+    "bump": "deno run -A jsr:@mys/bump@1",
+    "transform": "deno run -A @workspace/tools"
   },
   "imports": {
     "@dldc/css-builder": "jsr:@dldc/css-builder@^1.6.0",

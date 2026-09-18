@@ -1,5 +1,5 @@
 {
-  "name": "@dldc-sandbox/tools",
+  "name": "@workspace/tools",
   "exports": "./transform.ts",
   "publish": false,
   "imports": {
