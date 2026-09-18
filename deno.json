@@ -1,6 +1,6 @@
 {
   "name": "@dldc-sandbox/styles",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "exports": "./transformed/mod.ts",
   "nodeModulesDir": "auto",
   "tasks": {
@@ -35,6 +35,6 @@
     }
   },
   "publish": {
-    "include": ["transformed"]
+    "include": ["transformed", "src"]
   }
 }
