@@ -626,20 +626,28 @@
     }
   },
   "workspace": {
-    "dependencies": [
-      "jsr:@dldc/css-builder@^1.6.0",
-      "jsr:@std/fs@^1.0.24",
-      "jsr:@std/path@^1.1.6",
-      "npm:@jsr/deno__loader@0.5",
-      "npm:@vanilla-extract/css-utils@~0.1.6",
-      "npm:@vanilla-extract/css@^1.21.2",
-      "npm:@vanilla-extract/dynamic@^2.1.5",
-      "npm:@vanilla-extract/integration@^8.0.10",
-      "npm:@vanilla-extract/recipes@~0.5.7",
-      "npm:clsx@^2.1.1",
-      "npm:csstype@^3.2.3",
-      "npm:esbuild@~0.28.2",
-      "npm:type-fest@^5.9.0"
-    ]
+    "members": {
+      "styles": {
+        "dependencies": [
+          "jsr:@dldc/css-builder@^1.6.0",
+          "npm:@vanilla-extract/css-utils@~0.1.6",
+          "npm:@vanilla-extract/css@^1.21.2",
+          "npm:@vanilla-extract/dynamic@^2.1.5",
+          "npm:@vanilla-extract/recipes@~0.5.7",
+          "npm:clsx@^2.1.1",
+          "npm:csstype@^3.2.3",
+          "npm:type-fest@^5.9.0"
+        ]
+      },
+      "tools": {
+        "dependencies": [
+          "jsr:@std/fs@^1.0.24",
+          "jsr:@std/path@^1.1.6",
+          "npm:@jsr/deno__loader@0.5",
+          "npm:@vanilla-extract/integration@^8.0.10",
+          "npm:esbuild@~0.28.2"
+        ]
+      }
+    }
   }
 }

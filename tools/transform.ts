@@ -31,9 +31,10 @@ import {
 } from "@jsr/deno__loader";
 import * as esbuild from "esbuild";
 
-const ROOT_DIR = fromFileUrl(new URL(".", import.meta.url));
-const SOURCE_DIR = fromFileUrl(new URL("./src", import.meta.url));
-const OUT_DIR = fromFileUrl(new URL("./transformed", import.meta.url));
+const TOOLS_DIR = fromFileUrl(new URL(".", import.meta.url));
+const STYLES_DIR = join(dirname(TOOLS_DIR), "styles");
+const SOURCE_DIR = join(STYLES_DIR, "src");
+const OUT_DIR = join(STYLES_DIR, "transformed");
 
 // `@vanilla-extract/integration` captures `process.env.NODE_ENV` at load time
 // and later assigns it back to `process.env`; if it is `undefined` that
@@ -47,11 +48,11 @@ const {
   transform: vanillaTransform,
 } = await import("@vanilla-extract/integration");
 
-/** Reads the package name from `deno.json` (no `package.json` required). */
+/** Reads the package name from the `styles` package's `deno.json`. */
 function getPackageName(): string {
   try {
     const denoJson = JSON.parse(
-      Deno.readTextFileSync(join(ROOT_DIR, "deno.json")),
+      Deno.readTextFileSync(join(STYLES_DIR, "deno.json")),
     );
     return typeof denoJson.name === "string" ? denoJson.name : "";
   } catch {
@@ -62,7 +63,7 @@ function getPackageName(): string {
 const PACKAGE_NAME = getPackageName();
 
 const denoWorkspace = new Workspace({
-  configPath: join(ROOT_DIR, "deno.json"),
+  configPath: join(dirname(TOOLS_DIR), "deno.json"),
 });
 const denoLoader = await denoWorkspace.createLoader();
 const textDecoder = new TextDecoder();
@@ -323,7 +324,7 @@ async function processVanillaFile(
   filePath: string,
 ): Promise<{ code: string; hasCss: boolean }> {
   const identOption = transformConfig.identifiers ?? "short";
-  const cwd = transformConfig.cwd ?? ROOT_DIR;
+  const cwd = transformConfig.cwd ?? STYLES_DIR;
 
   const source = await compileFile(filePath, cwd, identOption);
 

@@ -1,0 +1,12 @@
+{
+  "name": "@dldc-sandbox/tools",
+  "exports": "./transform.ts",
+  "publish": false,
+  "imports": {
+    "@jsr/deno__loader": "npm:@jsr/deno__loader@^0.5.0",
+    "@std/fs": "jsr:@std/fs@^1.0.24",
+    "@std/path": "jsr:@std/path@^1.1.6",
+    "@vanilla-extract/integration": "npm:@vanilla-extract/integration@^8.0.10",
+    "esbuild": "npm:esbuild@^0.28.2"
+  }
+}
