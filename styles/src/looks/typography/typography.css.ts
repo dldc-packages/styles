@@ -1,5 +1,5 @@
 import { type ComplexStyleRule, styleVariants } from "@vanilla-extract/css";
-import type { TFontWeight } from "../../tokens/typography/index.ts";
+import type { TFontWeight } from "../../tokens/typography.ts";
 import { withLayer } from "../../utils/layer.ts";
 
 export const fontWeightVariantsClass = styleVariants(

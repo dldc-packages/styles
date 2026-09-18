@@ -6,13 +6,9 @@ import {
   styleVariants,
 } from "@vanilla-extract/css";
 import { calc } from "@vanilla-extract/css-utils";
-import {
-  colorsVars,
-  dynamicColorVars,
-  opacity,
-} from "../../tokens/colors/index.ts";
-import { sizeToRemString } from "../../tokens/size/index.ts";
-import type { TDesignVariant } from "../../tokens/variants/index.ts";
+import { colorsVars, dynamicColorVars, opacity } from "../../tokens/colors.ts";
+import { sizeToRemString } from "../../tokens/size.ts";
+import type { TDesignVariant } from "../../tokens/variants.ts";
 import {
   _after,
   _before,

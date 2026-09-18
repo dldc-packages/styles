@@ -4,7 +4,7 @@ import {
   NEUTRAL_COLOR_SHADES,
   opacity,
   type TNeutralColorShade,
-} from "../../tokens/colors/index.ts";
+} from "../../tokens/colors.ts";
 import { sizeToRemString } from "../../tokens/size/utils.ts";
 import { withLayer } from "../../utils/layer.ts";
 

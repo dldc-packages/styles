@@ -2,7 +2,7 @@ import { assignInlineVars } from "@vanilla-extract/dynamic";
 import { clsx } from "clsx";
 import { dynamicColor } from "../../tokens/colors/colors.css.ts";
 import type { TPaletteColor } from "../../tokens/colors/types.ts";
-import type { TDesignVariant } from "../../tokens/variants/index.ts";
+import type { TDesignVariant } from "../../tokens/variants.ts";
 import { look, type TLook } from "../../utils/look.ts";
 import { actionVariantsClass } from "../action/action.css.ts";
 import { paddingVar } from "../padding/index.ts";

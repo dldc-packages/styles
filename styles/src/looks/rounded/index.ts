@@ -4,7 +4,7 @@ import {
   UNIT_IN_REM,
   UNIT_IN_REM_STRING,
 } from "../../tokens/size/constants.ts";
-import { roundedVar } from "../../tokens/variables/variables.css.ts";
+import { roundedVar } from "../../tokens/variables.css.ts";
 import { look, type TLook } from "../../utils/look.ts";
 import { roundedBorderRadiusClass } from "./rounded.css.ts";
 

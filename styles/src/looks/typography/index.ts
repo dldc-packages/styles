@@ -5,8 +5,8 @@ import {
   UNIT_IN_REM,
   UNIT_IN_REM_STRING,
 } from "../../tokens/size/constants.ts";
-import type { TFontWeight } from "../../tokens/typography/index.ts";
-import { contentSizeVar } from "../../tokens/variables/variables.css.ts";
+import type { TFontWeight } from "../../tokens/typography.ts";
+import { contentSizeVar } from "../../tokens/variables.css.ts";
 import { look, mergeLooks, type TLook } from "../../utils/look.ts";
 import type { CSSProperties } from "../../utils/types.ts";
 import { contentSizeLineHeightClass } from "../content-size/contentSize.css.ts";

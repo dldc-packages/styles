@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { dynamicColor } from "../../tokens/colors/colors.css.ts";
 import type { TPaletteColor } from "../../tokens/colors/types.ts";
-import type { TDesignVariant } from "../../tokens/variants/index.ts";
+import type { TDesignVariant } from "../../tokens/variants.ts";
 import { look, type TLook } from "../../utils/look.ts";
 import {
   actionActiveVariantsClass,

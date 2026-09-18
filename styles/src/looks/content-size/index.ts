@@ -1,7 +1,7 @@
 import * as css from "@dldc/css-builder";
 import { assignInlineVars } from "@vanilla-extract/dynamic";
 import { UNIT_IN_REM_STRING } from "../../tokens/size/constants.ts";
-import { contentSizeVar } from "../../tokens/variables/variables.css.ts";
+import { contentSizeVar } from "../../tokens/variables.css.ts";
 import { look, type TLook } from "../../utils/look.ts";
 import { MIN_AUTO_HEIGHT } from "../size/index.ts";
 import { contentSizeLineHeightClass } from "./contentSize.css.ts";

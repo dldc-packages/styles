@@ -1,5 +1,5 @@
 {
-  "workspace": ["./styles", "./tools"],
+  "workspace": ["./docs", "./styles", "./tools", "./tailwind-plugin"],
   "nodeModulesDir": "auto",
   "tasks": {
     "deps:outdated": "deno outdated",
@@ -13,8 +13,11 @@
       "dom"
     ]
   },
+  "fmt": {
+    "exclude": ["docs/.vite", "docs/dist"]
+  },
   "lint": {
-    "exclude": ["styles/transformed"],
+    "exclude": ["styles/transformed", "docs/.vite", "docs/dist"],
     "rules": {
       "exclude": ["no-explicit-any"]
     }

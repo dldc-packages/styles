@@ -1,0 +1,26 @@
+{
+  "name": "@workspace/docs",
+  "exports": "./src/main.tsx",
+  "publish": false,
+  "tasks": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "@ariakit/react": "npm:@ariakit/react@^0.4.40",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^2.0.3",
+    "@types/react": "npm:@types/react@^19.2.18",
+    "@types/react-dom": "npm:@types/react-dom@^19.2.7",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^6.1.1",
+    "react": "npm:react@^19.2.8",
+    "react-dom": "npm:react-dom@^19.2.8",
+    "vite": "npm:vite@^8.2.2"
+  },
+  "compilerOptions": {
+    "types": ["react", "react-dom"],
+    "lib": ["dom", "dom.iterable", "deno.ns"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}

@@ -1,9 +1,13 @@
 {
-  "name": "@dldc-sandbox/styles",
-  "version": "0.4.1",
-  "exports": "./transformed/mod.ts",
+  "name": "@dldc/styles",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./transformed/mod.ts",
+    "./tokens/colors": "./transformed/tokens/colors.ts",
+    "./tokens/size": "./transformed/tokens/size.ts",
+    "./tokens/variables": "./transformed/tokens/variables.css.ts"
+  },
   "tasks": {
-    "bump": "deno run -A jsr:@mys/bump@1",
     "transform": "deno run -A @workspace/tools"
   },
   "imports": {

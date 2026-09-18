@@ -1,5 +1,5 @@
 import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
-import { contentSizeVar } from "../../tokens/variables/variables.css.ts";
+import { contentSizeVar } from "../../tokens/variables.css.ts";
 import { withLayer } from "../../utils/layer.ts";
 
 export const iconClass = style(

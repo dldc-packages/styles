@@ -8,7 +8,7 @@ import {
 } from "@vanilla-extract/css";
 import { colorsVars } from "../../tokens/colors/colors.css.ts";
 import { opacity } from "../../tokens/colors/utils.ts";
-import { contentSizeVar } from "../../tokens/variables/variables.css.ts";
+import { contentSizeVar } from "../../tokens/variables.css.ts";
 import { layer, withLayer } from "../../utils/layer.ts";
 import { em, rem, round } from "./utils.ts";
 

@@ -12,7 +12,7 @@ import {
 import type { TPaletteColor } from "../../tokens/colors/types.ts";
 import { opacity } from "../../tokens/colors/utils.ts";
 import { sizeToRemString } from "../../tokens/size/utils.ts";
-import type { TDesignVariant } from "../../tokens/variants/index.ts";
+import type { TDesignVariant } from "../../tokens/variants.ts";
 import {
   _after,
   _before,

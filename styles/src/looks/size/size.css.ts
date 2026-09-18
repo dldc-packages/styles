@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { sizeVar } from "../../tokens/variables/variables.css.ts";
+import { sizeVar } from "../../tokens/variables.css.ts";
 import { withLayer } from "../../utils/layer.ts";
 
 export const sizeMinSizeClass = style(
