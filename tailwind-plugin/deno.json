@@ -1,7 +1,7 @@
 {
   "name": "@dldc/styles-tailwind-plugin",
   "version": "0.1.0",
-  "exports": "./transformed/mod.ts",
+  "exports": "./src/mod.ts",
   "imports": {
     "tailwindcss": "npm:tailwindcss@^4.3.3"
   }
