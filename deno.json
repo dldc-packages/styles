@@ -3,7 +3,6 @@
   "nodeModulesDir": "auto",
   "tasks": {
     "transform": "deno run -A tools/transform.ts",
-    "bump": "deno run -A jsr:@mys/bump@1",
     "deps:outdated": "deno outdated",
     "deps:update": "deno outdated --update --latest --interactive",
     "check": "deno fmt --check . && deno check . && deno lint ."
