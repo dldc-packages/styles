@@ -21,7 +21,7 @@ export function maybeSizeToRemString(
   return `${sizeToRem(size)}rem`;
 }
 
-export function sizeToFontSize(size: TDesignLength | (string & {})) {
+export function sizeToFontSize(size: TDesignLength | (string & {})): string {
   const lineHeightRem = sizeToRem(size);
   const fontSizeRem = lineHeightRem -
     0.56 * Math.exp(-Math.pow(1.76 - lineHeightRem, 2) / Math.pow(0.8, 2));
